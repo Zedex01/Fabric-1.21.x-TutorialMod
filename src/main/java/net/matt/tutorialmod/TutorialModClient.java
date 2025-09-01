@@ -6,6 +6,6 @@ public class TutorialModClient implements ClientModInitializer {
 
     @Override
     public void onInitializeClient() {
-
+        final int x = 0;
     }
 }

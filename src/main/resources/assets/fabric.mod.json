@@ -1,6 +1,6 @@
 {
 	"schemaVersion": 1,
-	"id": "tutoriamod",
+	"id": "tutorialmod",
 	"version": "${version}",
 	"name": "Tutorial Mod",
 	"description": "This is a tutorial mod written by me from Kaupenjoe on youtube",
@@ -9,10 +9,10 @@
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/Zedex01/Fabric-1.21.x-TutorialMod"
 	},
-	"license": "CC0-1.0",
-	"icon": "assets/tutoriamod/icon.png",
+	"license": "MIT",
+	"icon": "assets/tutorialmod/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
@@ -26,7 +26,7 @@
         ]
 	},
 	"mixins": [
-		"tutoriamod.mixins.json"
+		"tutorialmod.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.17.2",
