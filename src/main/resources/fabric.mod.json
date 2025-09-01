@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "tutoriamod",
+	"version": "${version}",
+	"name": "Tutorial Mod",
+	"description": "This is a tutorial mod written by me from Kaupenjoe on youtube",
+	"authors": [
+		"Matt (Zedex)"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/tutoriamod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.matt.tutorialmod.TutorialMod"
+		],
+		"fabric-datagen": [
+			"net.matt.tutorialmod.TutorialModDataGenerator"
+		],
+        "client": [
+            "net.matt.tutorialmod.TutorialModClient"
+        ]
+	},
+	"mixins": [
+		"tutoriamod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.2",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
