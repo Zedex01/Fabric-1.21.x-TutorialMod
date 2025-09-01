@@ -5,7 +5,7 @@
 	"name": "Tutorial Mod",
 	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
-		"Me!"
+		"Matt [Zedex]"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
@@ -20,7 +20,10 @@
 		],
 		"fabric-datagen": [
 			"net.matt.tutorialmod.TutorialModDataGenerator"
-		]
+		],
+        "client": [
+            "net.matt.tutorialmod.TutorialModClient"
+        ]
 	},
 	"mixins": [
 		"tutorialmod.mixins.json"
