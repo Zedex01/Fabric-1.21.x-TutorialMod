@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#" : {
+      "item": "tutorialmod:pink_garnet"
+    },
+    "I": {
+      "item": "minecraft:stone"
+    }
+  },
+  "pattern": [
+    "I#I",
+    "#I#",
+    "I#I"
+  ],
+  "result": {
+    "count": 1,
+    "id": "tutorialmod:magic_block"
+  }
+}
