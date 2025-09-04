@@ -1,4 +1,13 @@
-// 1.21	2025-09-03T21:39:52.3373259	Tutorial Mod/Tags for minecraft:block
+// 1.21	2025-09-03T23:08:46.8877062	Tutorial Mod/Tags for minecraft:block
 079e21ee82e19be3b06c0ad61d06e9bdce588108 data\minecraft\tags\block\needs_diamond_tool.json
+87c23b954c6a1061edf28d30d87d40ccfecb8a8f data\minecraft\tags\block\fences.json
+6e20b69a9d2f5656b1009614747a8e826f937071 data\minecraft\tags\block\walls.json
+db2d438ce8cae8f0401c415309157398e02e13d9 data\minecraft\tags\block\buttons.json
+c10bc6178ecd2d2eb6b023256bbd1f4dd1eb55ac data\minecraft\tags\block\pressure_plates.json
 fa8f08652df6ea86054f0d51dedc217c9e46db23 data\minecraft\tags\block\mineable\pickaxe.json
+c2a0995dc4249bb6ce8b0b74403e0341bbc31d04 data\minecraft\tags\block\trapdoors.json
 7a70ab72eeaabe0aee01ccc3433d53fc610e8087 data\minecraft\tags\block\needs_iron_tool.json
+c0971b616caaf35d45d5839c2e82b95b7f064109 data\minecraft\tags\block\doors.json
+35b1e45c0771d08a6ac062ce6258153211c0b028 data\minecraft\tags\block\stairs.json
+ef2719dd857caecb8c28771d7856756a7e03bf17 data\minecraft\tags\block\slabs.json
+8159fdbcb7619cbd57674525489b6dfed8a407fd data\minecraft\tags\block\fence_gates.json

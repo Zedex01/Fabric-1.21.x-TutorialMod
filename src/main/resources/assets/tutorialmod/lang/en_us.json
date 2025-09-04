@@ -15,5 +15,15 @@
   "tooltip.tutorialmod.magic_block.tooltip": "This block is very ¶9MAGICAL¶r",
   "tooltip.tutorialmod.chisel.shift_down": "I CAN SEE YOU SHIFTING!",
   "tooltip.tutorialmod.chisel": "You are not shifting...",
-  "tooltip.tutorialmod.cauliflower": "This is delicious!"
+  "tooltip.tutorialmod.cauliflower": "This is delicious!",
+  "block.tutorialmod.pink_garnet_stairs": "Pink Garnet Stairs",
+  "block.tutorialmod.pink_garnet_slab": "Pink Garnet Slab",
+  "block.tutorialmod.pink_garnet_button": "Pink Garnet Button",
+  "block.tutorialmod.pink_garnet_pressure_plate": "Pink Garnet Pressure Plate",
+  "block.tutorialmod.pink_garnet_fence": "Pink Garnet Fence",
+  "block.tutorialmod.pink_garnet_fence_gate": "Pink Garnet Fence Gate",
+  "block.tutorialmod.pink_garnet_wall": "Pink Garnet Wall",
+  "block.tutorialmod.pink_garnet_door": "Pink Garnet Door",
+  "block.tutorialmod.pink_garnet_trapdoor": "Pink Garnet Trapdoor"
+
 }

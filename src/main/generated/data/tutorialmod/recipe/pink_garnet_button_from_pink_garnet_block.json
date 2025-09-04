@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "pink_garnet",
+  "ingredients": [
+    {
+      "item": "tutorialmod:pink_garnet_block"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "tutorialmod:pink_garnet_button"
+  }
+}
