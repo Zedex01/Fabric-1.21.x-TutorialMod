@@ -1,6 +1,7 @@
 package net.matt.tutorialmod.item.custom;
 
 import net.matt.tutorialmod.block.ModBlocks;
+import net.matt.tutorialmod.component.ModDataComponentTypes;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.client.gui.screen.Screen;
@@ -54,6 +55,11 @@ public class ChiselItem extends Item {
 
                 //Play sound
                 world.playSound(null, context.getBlockPos(), SoundEvents.BLOCK_GRINDSTONE_USE, SoundCategory.BLOCKS);
+
+                //Everytime we right-click the chisel item, it saves that block position.
+                //Done with custom componentDataType
+                context.getStack().set(ModDataComponentTypes.COORDINATES, context.getBlockPos());
+                //can set the value to null if you ever want to
             }
         }
         //Causes the hand to show using of the item
@@ -69,6 +75,11 @@ public class ChiselItem extends Item {
         }
         else {
             tooltip.add(Text.translatable("tooltip.tutorialmod.chisel"));
+        }
+
+        //if the coordinates of the item is not equal to null:
+        if(stack.get(ModDataComponentTypes.COORDINATES) != null){
+            tooltip.add(Text.literal("Last block changed at " + stack.get(ModDataComponentTypes.COORDINATES)));
         }
 
         super.appendTooltip(stack, context, tooltip, type);
