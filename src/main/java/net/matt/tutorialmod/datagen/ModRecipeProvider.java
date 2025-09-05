@@ -9,6 +9,8 @@ import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.ItemConvertible;
+import net.minecraft.item.Items;
+import net.minecraft.item.MinecartItem;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
@@ -92,5 +94,68 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(recipeExporter);
 
         //Stone Cutting
+
+        //============= Tools =================
+        offerSword(recipeExporter, RecipeCategory.TOOLS, ModItems.PINK_GARNET, ModItems.PINK_GARNET_SWORD);
+        offerPickaxe(recipeExporter, RecipeCategory.TOOLS, ModItems.PINK_GARNET, ModItems.PINK_GARNET_PICKAXE);
+        offerAxe(recipeExporter, RecipeCategory.TOOLS, ModItems.PINK_GARNET, ModItems.PINK_GARNET_AXE);
+        offerShovel(recipeExporter, RecipeCategory.TOOLS, ModItems.PINK_GARNET, ModItems.PINK_GARNET_SHOVEL);
+        offerHoe(recipeExporter, RecipeCategory.TOOLS, ModItems.PINK_GARNET, ModItems.PINK_GARNET_HOE);
     }
+
+    //Helpers
+    private void offerSword(RecipeExporter recipeExporter, RecipeCategory recipeCategory,  ItemConvertible input, ItemConvertible output){
+        ShapedRecipeJsonBuilder.create(recipeCategory, output)
+                .pattern(" R ")
+                .pattern(" R ")
+                .pattern(" S ")
+                .input('R', input)
+                .input('S', Items.STICK)
+                .criterion(hasItem(input),conditionsFromItem(input))
+                .offerTo(recipeExporter);
+    }
+
+    private void offerPickaxe(RecipeExporter recipeExporter, RecipeCategory recipeCategory,  ItemConvertible input, ItemConvertible output){
+        ShapedRecipeJsonBuilder.create(recipeCategory, output)
+                .pattern("RRR")
+                .pattern(" S ")
+                .pattern(" S ")
+                .input('R', input)
+                .input('S', Items.STICK)
+                .criterion(hasItem(input),conditionsFromItem(input))
+                .offerTo(recipeExporter);
+    }
+
+    private void offerShovel(RecipeExporter recipeExporter, RecipeCategory recipeCategory,  ItemConvertible input, ItemConvertible output){
+        ShapedRecipeJsonBuilder.create(recipeCategory, output)
+                .pattern(" R ")
+                .pattern(" S ")
+                .pattern(" S ")
+                .input('R', input)
+                .input('S', Items.STICK)
+                .criterion(hasItem(input),conditionsFromItem(input))
+                .offerTo(recipeExporter);
+    }
+
+    private void offerAxe(RecipeExporter recipeExporter, RecipeCategory recipeCategory,  ItemConvertible input, ItemConvertible output){
+        ShapedRecipeJsonBuilder.create(recipeCategory, output)
+                .pattern("RR ")
+                .pattern("RS ")
+                .pattern(" S ")
+                .input('R', input)
+                .input('S', Items.STICK)
+                .criterion(hasItem(input),conditionsFromItem(input))
+                .offerTo(recipeExporter);
+    }
+    private void offerHoe(RecipeExporter recipeExporter, RecipeCategory recipeCategory,  ItemConvertible input, ItemConvertible output){
+        ShapedRecipeJsonBuilder.create(recipeCategory, output)
+                .pattern("RR ")
+                .pattern(" S ")
+                .pattern(" S ")
+                .input('R', input)
+                .input('S', Items.STICK)
+                .criterion(hasItem(input),conditionsFromItem(input))
+                .offerTo(recipeExporter);
+    }
+
 }

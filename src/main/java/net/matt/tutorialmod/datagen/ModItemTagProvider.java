@@ -8,6 +8,7 @@ import net.matt.tutorialmod.util.ModTags;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
 import net.minecraft.registry.RegistryWrapper;
+import net.minecraft.registry.tag.ItemTags;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;
@@ -27,5 +28,18 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(Items.COAL)
                 .add(Items.STICK)
                 .add(Items.APPLE);
+
+        //Special Tool Item Tags [Important for enchanitg]
+        getOrCreateTagBuilder(ItemTags.SWORDS)
+                .add(ModItems.PINK_GARNET_SWORD);
+        getOrCreateTagBuilder(ItemTags.PICKAXES)
+                .add(ModItems.PINK_GARNET_PICKAXE);
+        getOrCreateTagBuilder(ItemTags.AXES)
+                .add(ModItems.PINK_GARNET_AXE);
+        getOrCreateTagBuilder(ItemTags.SHOVELS)
+                .add(ModItems.PINK_GARNET_SHOVEL);
+        getOrCreateTagBuilder(ItemTags.HOES)
+                .add(ModItems.PINK_GARNET_HOE);
+
     }
 }

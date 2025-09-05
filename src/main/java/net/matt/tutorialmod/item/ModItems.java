@@ -4,9 +4,7 @@ import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.matt.tutorialmod.TutorialMod;
 import net.matt.tutorialmod.item.custom.ChiselItem;
 import net.matt.tutorialmod.item.custom.PinkGarnetHammerItem;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroups;
-import net.minecraft.item.ItemStack;
+import net.minecraft.item.*;
 import net.minecraft.item.tooltip.TooltipType;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -38,6 +36,24 @@ public class ModItems {
     //Fuel Items
     public static final Item STARLIGHT_ASHES = registerItem("starlight_ashes", new Item(new Item.Settings()));
 
+    //Custom Tools
+    public static final Item PINK_GARNET_SWORD = registerItem("pink_garnet_sword",
+            new SwordItem(ModToolMaterials.PINK_GARNET, new Item.Settings()
+                    .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.PINK_GARNET, 3, -2.4f))));
+    public static final Item PINK_GARNET_PICKAXE = registerItem("pink_garnet_pickaxe",
+            new PickaxeItem(ModToolMaterials.PINK_GARNET, new Item.Settings()
+                    .attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.PINK_GARNET, 1, -2.8f))));
+    public static final Item PINK_GARNET_AXE = registerItem("pink_garnet_axe",
+            new AxeItem(ModToolMaterials.PINK_GARNET, new Item.Settings()
+                    .attributeModifiers(AxeItem.createAttributeModifiers(ModToolMaterials.PINK_GARNET, 6, -3.2f))));
+    public static final Item PINK_GARNET_SHOVEL = registerItem("pink_garnet_shovel",
+            new ShovelItem(ModToolMaterials.PINK_GARNET, new Item.Settings()
+                    .attributeModifiers(ShovelItem.createAttributeModifiers(ModToolMaterials.PINK_GARNET, 1.5f, -3.0f))));
+    public static final Item PINK_GARNET_HOE = registerItem("pink_garnet_hoe",
+            new HoeItem(ModToolMaterials.PINK_GARNET, new Item.Settings()
+                    .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.PINK_GARNET, 0, -3f))));
+
+
 
     //Helper Method to assist in registering items, simplifies the inputs necessary
     public static Item registerItem(String name, Item item){
@@ -56,6 +72,14 @@ public class ModItems {
             entries.add(PINK_GARNET_HAMMER);
             entries.add(CAULIFLOWER);
             entries.add(STARLIGHT_ASHES);
+        });
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(entries -> {
+            entries.add(PINK_GARNET_SWORD);
+            entries.add(PINK_GARNET_PICKAXE);
+            entries.add(PINK_GARNET_AXE);
+            entries.add(PINK_GARNET_SHOVEL);
+            entries.add(PINK_GARNET_HOE);
         });
     }
 
