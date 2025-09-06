@@ -47,5 +47,11 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.PINK_GARNET_LEGGINGS)
                 .add(ModItems.PINK_GARNET_BOOTS);
 
+        //Allows armor to be enchantable
+        getOrCreateTagBuilder(ItemTags.FOOT_ARMOR_ENCHANTABLE).add(ModItems.PINK_GARNET_BOOTS);
+        getOrCreateTagBuilder(ItemTags.LEG_ARMOR_ENCHANTABLE).add(ModItems.PINK_GARNET_LEGGINGS);
+        getOrCreateTagBuilder(ItemTags.CHEST_ARMOR_ENCHANTABLE).add(ModItems.PINK_GARNET_CHESTPLATE);
+        getOrCreateTagBuilder(ItemTags.HEAD_ARMOR_ENCHANTABLE).add(ModItems.PINK_GARNET_HELMET);
+
     }
 }
