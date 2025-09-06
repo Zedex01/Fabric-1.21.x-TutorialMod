@@ -1,6 +1,6 @@
-// 1.21	2025-09-05T23:24:57.2395416	Tutorial Mod/Model Definitions
-69a45d9eda7fcbbb46f3a4bf568243a7b2141123 assets\tutorialmod\models\item\chisel.json
+// 1.21	2025-09-06T00:01:04.0588787	Tutorial Mod/Model Definitions
 6a728eda7238fed6b027e801e464250c3f3144ba assets\tutorialmod\blockstates\pink_garnet_block.json
+69a45d9eda7fcbbb46f3a4bf568243a7b2141123 assets\tutorialmod\models\item\chisel.json
 b8a328f7a3c0600e44839a46d05666c47291ffb9 assets\tutorialmod\models\block\raw_pink_garnet_block.json
 81bb3e4be03a91f0bc9119ef53fc4229cc8e66b7 assets\tutorialmod\blockstates\pink_garnet_trapdoor.json
 32305f6ce3ee61546017e60ba255e791e8997032 assets\tutorialmod\models\item\pink_garnet.json
@@ -92,6 +92,7 @@ f3f72a1eb57f8b905366cac9bf1a67bca00e859b assets\tutorialmod\models\block\pink_ga
 265ff9736526dae271306394da10ef1c9a5ebe2c assets\tutorialmod\models\block\pink_garnet_button_inventory.json
 5766845b2b537199e0d43d0fa33b3fb4ff9dc38d assets\tutorialmod\models\block\pink_garnet_ore.json
 93315526f85f2922c4e6e345c498fe6f4287fd86 assets\tutorialmod\blockstates\pink_garnet_fence_gate.json
+d07d9c39d26911876be7b596eca7527632b20be2 assets\tutorialmod\models\item\pink_garnet_horse_armor.json
 7d0e7366e51be17b05747b64b8090fc6e6afd390 assets\tutorialmod\models\item\pink_garnet_leggings_diamond_trim.json
 db3c7fd404543728f8b989bee0ca68018dac6e79 assets\tutorialmod\models\item\magic_block.json
 f7956eb1acfccb309307cd40ba8d8e9a1f968b6e assets\tutorialmod\models\block\pink_garnet_pressure_plate_down.json

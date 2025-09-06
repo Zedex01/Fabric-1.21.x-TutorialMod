@@ -21,7 +21,7 @@ public class ModArmorItem extends ArmorItem {
     //can add multiple materials by extending off of .put
     private static final Map<RegistryEntry<ArmorMaterial>, List<StatusEffectInstance>> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<RegistryEntry<ArmorMaterial>, List<StatusEffectInstance>>())
-                    .put(ModArmorMaterials.PINK_GARNET_ARMOR_MATERIAL,
+                    .put(ModArmorMaterials.PINK_GARNET,
                             List.of(new StatusEffectInstance(StatusEffects.HASTE, 400, 1, false, false),
                                     new StatusEffectInstance(StatusEffects.JUMP_BOOST, 400, 1, false, false))).build();
 
