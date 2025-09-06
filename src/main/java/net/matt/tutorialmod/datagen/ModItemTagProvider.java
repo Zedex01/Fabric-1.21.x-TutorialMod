@@ -53,5 +53,12 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         getOrCreateTagBuilder(ItemTags.CHEST_ARMOR_ENCHANTABLE).add(ModItems.PINK_GARNET_CHESTPLATE);
         getOrCreateTagBuilder(ItemTags.HEAD_ARMOR_ENCHANTABLE).add(ModItems.PINK_GARNET_HELMET);
 
+        //For Trim Materials
+        getOrCreateTagBuilder(ItemTags.TRIM_MATERIALS)
+                .add(ModItems.PINK_GARNET);
+
+        getOrCreateTagBuilder(ItemTags.TRIM_TEMPLATES)
+                .add(ModItems.KAUPEN_SMITHING_TEMPLATE);
+
     }
 }

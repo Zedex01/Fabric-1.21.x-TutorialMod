@@ -1,6 +1,8 @@
-// 1.21	2025-09-06T00:01:04.0549741	Tutorial Mod/Tags for minecraft:item
+// 1.21	2025-09-06T17:03:52.2333768	Tutorial Mod/Tags for minecraft:item
 b9b8e471c2aac220712fdd1374ae047021302851 data\tutorialmod\tags\item\transformable_items.json
+3785ccf2250da2396658a0921bd6f81beb1f7be9 data\minecraft\tags\item\trim_templates.json
 6c96b9424c0c5a4b34b8a19ae1e1da7da29e68d6 data\minecraft\tags\item\enchantable\head_armor.json
+6ba665925c3e1e7b5501fa38ab3095b1987c0886 data\minecraft\tags\item\trim_materials.json
 399b249fee5a9fdbe32dc998aec0601a6c127f5f data\minecraft\tags\item\enchantable\leg_armor.json
 8f653a3350d8f1fbd15d245e7de66379a30930e2 data\minecraft\tags\item\swords.json
 351330e211b4558f91f0550566fbac71f5a3b2e5 data\minecraft\tags\item\shovels.json
