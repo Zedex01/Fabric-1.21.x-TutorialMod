@@ -34,6 +34,11 @@
   "item.tutorialmod.pink_garnet_pickaxe": "Pink Garnet Pickaxe",
   "item.tutorialmod.pink_garnet_axe": "Pink Garnet Axe",
   "item.tutorialmod.pink_garnet_shovel": "Pink Garnet Shovel",
-  "item.tutorialmod.pink_garnet_hoe": "Pink Garnet Hoe"
+  "item.tutorialmod.pink_garnet_hoe": "Pink Garnet Hoe",
+
+  "item.tutorialmod.pink_garnet_helmet": "Pink Garnet Helmet",
+  "item.tutorialmod.pink_garnet_chestplate": "Pink Garnet Chestplate",
+  "item.tutorialmod.pink_garnet_leggings": "Pink Garnet leggings",
+  "item.tutorialmod.pink_garnet_boots": "Pink Garnet Boots"
 
 }
