@@ -101,6 +101,19 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerAxe(recipeExporter, RecipeCategory.TOOLS, ModItems.PINK_GARNET, ModItems.PINK_GARNET_AXE);
         offerShovel(recipeExporter, RecipeCategory.TOOLS, ModItems.PINK_GARNET, ModItems.PINK_GARNET_SHOVEL);
         offerHoe(recipeExporter, RecipeCategory.TOOLS, ModItems.PINK_GARNET, ModItems.PINK_GARNET_HOE);
+
+        //Pink Hammer
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.PINK_GARNET_HAMMER)
+                .pattern(" RT")
+                .pattern(" SR")
+                .pattern("S  ")
+                .input('R', ModItems.PINK_GARNET)
+                .input('S', Items.STICK)
+                .input('T', Items.STRING)
+                .criterion(hasItem(ModItems.PINK_GARNET),conditionsFromItem(ModItems.PINK_GARNET))
+                .offerTo(recipeExporter);
+
+
     }
 
     //Helpers

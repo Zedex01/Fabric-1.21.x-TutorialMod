@@ -1,4 +1,4 @@
-// 1.21	2025-09-04T21:49:10.7307809	Tutorial Mod/Recipes
+// 1.21	2025-09-05T21:40:54.203715	Tutorial Mod/Recipes
 210b89a9f0944463d3ca9515a05cf6e9fdd8540b data\tutorialmod\advancement\recipes\building_blocks\pink_garnet_stairs.json
 b04e1c0e5c77287f459aee8652f3f1a2f08ad704 data\tutorialmod\advancement\recipes\tools\pink_garnet_axe.json
 ecdcb274ed5fc6a35043cbcadb4d882817bcc71f data\tutorialmod\advancement\recipes\building_blocks\pink_garnet.json
@@ -23,6 +23,7 @@ b6f8761fd3704af68604f70d3fd23feae517c958 data\tutorialmod\recipe\pink_garnet_sho
 20ff29d6747251dc88039514f13ddbba87406ae1 data\tutorialmod\recipe\raw_pink_garnet_block.json
 485dc99f687198b7e162d0fceebf118c2664eae2 data\tutorialmod\advancement\recipes\misc\pink_garnet_from_smelting_pink_garnet_ore.json
 d75293ad4d755dbd8fe25d6bf6f3228b5787034a data\tutorialmod\recipe\pink_garnet_trapdoor.json
+7d143a859ca36f38fb3ea56dccd0ae1beb65cab4 data\tutorialmod\advancement\recipes\tools\pink_garnet_hammer.json
 6a84b180e209076bc545edb9589587f71cd7e312 data\tutorialmod\advancement\recipes\tools\pink_garnet_sword.json
 d080f86841f39d7fe7376f3965a1ba158b444ede data\tutorialmod\recipe\pink_garnet_slab.json
 37d9986703d11e6566388c5a150cbcefd280b817 data\tutorialmod\advancement\recipes\tools\pink_garnet_hoe.json
@@ -40,6 +41,7 @@ e3f64380bd08323f9a1aeb4a1032cd56cb84d361 data\tutorialmod\advancement\recipes\mi
 49501be7c679777345acaf8f5dec6ccac8ca4e30 data\tutorialmod\advancement\recipes\tools\pink_garnet_shovel.json
 446b9dd3ffa10e35305cea2352e714a76cd1c770 data\tutorialmod\recipe\pink_garnet_pressure_plate.json
 26f5e9d4b947229a35915c6044be3e7ae7309375 data\tutorialmod\advancement\recipes\misc\pink_garnet_from_blasting_raw_pink_garnet.json
+bdc14cc5ec878181def0129b87bf2c077be284f4 data\tutorialmod\recipe\pink_garnet_hammer.json
 6c250c703bd002f57e1a965e1d40873853330550 data\tutorialmod\recipe\pink_garnet_hoe.json
 7f8ad843400d92e46d10954c55e515280ab8958e data\tutorialmod\recipe\pink_garnet_from_smelting_pink_garnet_deepslate_ore.json
 df29facf4cb9f707f0017667a56f764b5d74c4e4 data\tutorialmod\recipe\pink_garnet_stairs.json

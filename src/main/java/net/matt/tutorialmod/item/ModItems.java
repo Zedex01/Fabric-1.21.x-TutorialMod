@@ -3,6 +3,7 @@ package net.matt.tutorialmod.item;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.matt.tutorialmod.TutorialMod;
 import net.matt.tutorialmod.item.custom.ChiselItem;
+import net.matt.tutorialmod.item.custom.HammerItem;
 import net.matt.tutorialmod.item.custom.PinkGarnetHammerItem;
 import net.minecraft.item.*;
 import net.minecraft.item.tooltip.TooltipType;
@@ -20,7 +21,7 @@ public class ModItems {
 
     //Registering custom item
     public static final Item CHISEL = registerItem("chisel", new ChiselItem(new Item.Settings().maxDamage(32)));
-    public static final Item PINK_GARNET_HAMMER = registerItem("pink_garnet_hammer", new PinkGarnetHammerItem(new Item.Settings().maxDamage(512)));
+    //public static final Item PINK_GARNET_HAMMER = registerItem("pink_garnet_hammer", new PinkGarnetHammerItem(new Item.Settings().maxDamage(512)));
 
     //Food Items
     public static final Item CAULIFLOWER = registerItem("cauliflower", new Item(new Item.Settings().food(ModFoodComponents.CAULIFLOWER)) {
@@ -54,6 +55,11 @@ public class ModItems {
                     .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.PINK_GARNET, 0, -3f))));
 
 
+    //Custom Hammer 2.0
+    public static final Item PINK_GARNET_HAMMER = registerItem("pink_garnet_hammer",
+            new HammerItem(ModToolMaterials.PINK_GARNET, new Item.Settings()
+                    .attributeModifiers(HammerItem.createAttributeModifiers(ModToolMaterials.PINK_GARNET, 7, -3.4f))));
+
 
     //Helper Method to assist in registering items, simplifies the inputs necessary
     public static Item registerItem(String name, Item item){
@@ -68,18 +74,22 @@ public class ModItems {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
             entries.add(PINK_GARNET);
             entries.add(RAW_PINK_GARNET);
-            entries.add(CHISEL);
-            entries.add(PINK_GARNET_HAMMER);
-            entries.add(CAULIFLOWER);
             entries.add(STARLIGHT_ASHES);
         });
 
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(entries -> {
+            entries.add(CAULIFLOWER);
+        });
+
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(entries -> {
+            entries.add(CHISEL);
             entries.add(PINK_GARNET_SWORD);
             entries.add(PINK_GARNET_PICKAXE);
             entries.add(PINK_GARNET_AXE);
             entries.add(PINK_GARNET_SHOVEL);
             entries.add(PINK_GARNET_HOE);
+
+            entries.add(PINK_GARNET_HAMMER);
         });
     }
 
