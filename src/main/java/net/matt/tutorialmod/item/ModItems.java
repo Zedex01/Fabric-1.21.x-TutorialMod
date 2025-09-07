@@ -83,6 +83,9 @@ public class ModItems {
     public static final Item  KAUPEN_SMITHING_TEMPLATE = registerItem("kaupen_armor_trim_smithing_template",
             SmithingTemplateItem.of(Identifier.of(TutorialMod.MOD_ID, "kaupen"), FeatureFlags.VANILLA));
 
+    //kaupen bow
+    public static final Item KAUPEN_BOW = registerItem("kaupen_bow",
+            new BowItem(new Item.Settings().maxDamage(500)));
 
     //==== Methods ====
     //Helper Method to assist in registering items, simplifies the inputs necessary
