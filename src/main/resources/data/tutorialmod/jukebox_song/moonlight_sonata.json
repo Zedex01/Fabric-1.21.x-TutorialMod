@@ -1,0 +1,8 @@
+{
+  "comparator_output": 15,
+  "description": {
+    "translate": "item.tutorialmod.moonlight_sonata_music_disc.desc"
+  },
+  "length_in_seconds": 194.0,
+  "sound_event": "tutorialmod:moonlight_sonata"
+}

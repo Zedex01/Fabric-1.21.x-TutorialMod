@@ -41,6 +41,10 @@ public class ModItemGroups {
                         entries.add(ModItems.KAUPEN_SMITHING_TEMPLATE);
                         entries.add(ModItems.KAUPEN_BOW);
 
+                        entries.add(ModItems.BAR_BRAWL_MUSIC_DISC);
+                        entries.add(ModItems.MOONLIGHT_SONATA_MUSIC_DISC);
+                        entries.add(ModItems.KAKARIKO_VILLAGE_MUSIC_DISC);
+
 
 
                     }).build());

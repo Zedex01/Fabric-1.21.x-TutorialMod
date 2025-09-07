@@ -5,6 +5,7 @@ import net.matt.tutorialmod.TutorialMod;
 import net.matt.tutorialmod.item.custom.ChiselItem;
 import net.matt.tutorialmod.item.custom.HammerItem;
 import net.matt.tutorialmod.item.custom.ModArmorItem;
+import net.matt.tutorialmod.sound.ModSounds;
 import net.minecraft.item.*;
 import net.minecraft.item.tooltip.TooltipType;
 import net.minecraft.registry.Registries;
@@ -86,6 +87,15 @@ public class ModItems {
     //kaupen bow
     public static final Item KAUPEN_BOW = registerItem("kaupen_bow",
             new BowItem(new Item.Settings().maxDamage(500)));
+
+
+    //Music Discs
+    public static final Item BAR_BRAWL_MUSIC_DISC = registerItem("bar_brawl_music_disc",
+            new Item(new Item.Settings().jukeboxPlayable(ModSounds.BAR_BRAWL_KEY).maxCount(1))); //sets stack limit to 1
+    public static final Item MOONLIGHT_SONATA_MUSIC_DISC = registerItem("moonlight_sonata_music_disc",
+            new Item(new Item.Settings().jukeboxPlayable(ModSounds.MOONLIGHT_SONATA_KEY).maxCount(1))); //sets stack limit to 1
+    public static final Item KAKARIKO_VILLAGE_MUSIC_DISC = registerItem("kakariko_village_music_disc",
+            new Item(new Item.Settings().jukeboxPlayable(ModSounds.KAKARIKO_VILLAGE_KEY).maxCount(1))); //sets stack limit to 1
 
     //==== Methods ====
     //Helper Method to assist in registering items, simplifies the inputs necessary

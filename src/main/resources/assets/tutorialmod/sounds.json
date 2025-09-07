@@ -34,5 +34,29 @@
     "sounds": [
       "tutorialmod:magic_block_place"
     ]
+  },
+  "bar_brawl": {
+    "sounds": [
+      {
+        "name": "tutorialmod:bar_brawl",
+        "stream": true
+      }
+    ]
+  },
+  "kakariko_village": {
+    "sounds": [
+      {
+        "name": "tutorialmod:kakariko_village",
+        "stream": true
+      }
+    ]
+  },
+  "moonlight_sonata": {
+    "sounds": [
+      {
+        "name": "tutorialmod:moonlight_sonata",
+        "stream": true
+      }
+    ]
   }
 }

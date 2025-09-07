@@ -47,5 +47,14 @@
   "trim_material.tutorialmod.pink_garnet": "Pink Garnet Material",
   "trim_pattern.tutorialmod.kaupen": "Kaupen Armor Pattern",
 
-  "item.tutorialmod.kaupen_bow": "Kaupen Bow"
+  "item.tutorialmod.kaupen_bow": "Kaupen Bow",
+
+  "item.tutorialmod.bar_brawl_music_disc": "Bar Brawl Music Disc",
+  "item.tutorialmod.bar_brawl_music_disc.desc": "Bryan Tech - Bar Brawl (CC0)" ,
+
+  "item.tutorialmod.moonlight_sonata_music_disc": "Moonlight Sonata",
+  "item.tutorialmod.moonlight_sonata_music_disc.desc": " Hidden Citizens - Epic Trailer Version" ,
+
+  "item.tutorialmod.kakariko_village_music_disc": "Kakariko Village",
+  "item.tutorialmod.kakariko_village_music_disc.desc": "Mikel - Zelda & Chill ~ Lofi Remix"
 }

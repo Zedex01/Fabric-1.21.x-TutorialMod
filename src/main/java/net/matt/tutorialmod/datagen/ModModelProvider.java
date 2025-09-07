@@ -76,6 +76,9 @@ public class ModModelProvider extends FabricModelProvider {
 
         itemModelGenerator.register(ModItems.PINK_GARNET_HORSE_ARMOR, Models.GENERATED);
         itemModelGenerator.register(ModItems.KAUPEN_SMITHING_TEMPLATE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BAR_BRAWL_MUSIC_DISC, Models.GENERATED);
+        itemModelGenerator.register(ModItems.KAKARIKO_VILLAGE_MUSIC_DISC, Models.GENERATED);
+        itemModelGenerator.register(ModItems.MOONLIGHT_SONATA_MUSIC_DISC, Models.GENERATED);
 
     }
 }
