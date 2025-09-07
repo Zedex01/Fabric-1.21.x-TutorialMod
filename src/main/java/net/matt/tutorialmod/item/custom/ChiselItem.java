@@ -2,6 +2,7 @@ package net.matt.tutorialmod.item.custom;
 
 import net.matt.tutorialmod.block.ModBlocks;
 import net.matt.tutorialmod.component.ModDataComponentTypes;
+import net.matt.tutorialmod.sound.ModSounds;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.client.gui.screen.Screen;
@@ -54,7 +55,7 @@ public class ChiselItem extends Item {
                         item -> context.getPlayer().sendEquipmentBreakStatus(item, EquipmentSlot.MAINHAND));
 
                 //Play sound
-                world.playSound(null, context.getBlockPos(), SoundEvents.BLOCK_GRINDSTONE_USE, SoundCategory.BLOCKS);
+                world.playSound(null, context.getBlockPos(), ModSounds.CHISEL_USE, SoundCategory.BLOCKS);
 
                 //Everytime we right-click the chisel item, it saves that block position.
                 //Done with custom componentDataType

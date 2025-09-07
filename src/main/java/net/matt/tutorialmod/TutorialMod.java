@@ -9,6 +9,7 @@ import net.matt.tutorialmod.block.ModBlocks;
 import net.matt.tutorialmod.component.ModDataComponentTypes;
 import net.matt.tutorialmod.item.ModItemGroups;
 import net.matt.tutorialmod.item.ModItems;
+import net.matt.tutorialmod.sound.ModSounds;
 import net.matt.tutorialmod.util.HammerUsageEvent;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectInstance;
@@ -35,6 +36,8 @@ public class TutorialMod implements ModInitializer {
 
         //Data Component Types:
         ModDataComponentTypes.registerDataComponentTypes();
+
+        ModSounds.registerSounds();
 
         //Define item as Fuel item:
         FuelRegistry.INSTANCE.add(ModItems.STARLIGHT_ASHES, 600);

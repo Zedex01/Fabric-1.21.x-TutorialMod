@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.matt.tutorialmod.TutorialMod;
 import net.matt.tutorialmod.block.custom.MagicBlock;
 import net.matt.tutorialmod.block.custom.PinkGarnetLampBlock;
+import net.matt.tutorialmod.sound.ModSounds;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -28,7 +29,7 @@ public class ModBlocks {
 
     //Custom Blocks
     public static final Block MAGIC_BLOCK = registerBlock("magic_block",
-            new MagicBlock(AbstractBlock.Settings.create().strength(4f).sounds(BlockSoundGroup.AMETHYST_BLOCK)));
+            new MagicBlock(AbstractBlock.Settings.create().strength(4f).sounds(ModSounds.MAGIC_SOUNDS_GROUP)));
 
     //Pink Garnet Lamp
     public static final Block PINK_GARNET_LAMP = registerBlock("pink_garnet_lamp",
