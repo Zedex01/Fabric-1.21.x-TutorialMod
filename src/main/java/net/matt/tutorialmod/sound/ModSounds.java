@@ -32,12 +32,13 @@ public class ModSounds {
 
     public static final SoundEvent KAKARIKO_VILLAGE = registerSoundEvent("kakariko_village");
     public static final RegistryKey<JukeboxSong> KAKARIKO_VILLAGE_KEY = RegistryKey.of(RegistryKeys.JUKEBOX_SONG, Identifier.of(TutorialMod.MOD_ID, "kakariko_village"));
+
+
     //Helper Method
     private static SoundEvent registerSoundEvent(String name){
         Identifier id = Identifier.of(TutorialMod.MOD_ID, name);
         return Registry.register(Registries.SOUND_EVENT, id, SoundEvent.of(id));
     }
-
 
     public static void registerSounds(){
         TutorialMod.LOGGER.info("Registering mod sounds for " + TutorialMod.MOD_ID);

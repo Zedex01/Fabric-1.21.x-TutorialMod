@@ -56,5 +56,7 @@
   "item.tutorialmod.moonlight_sonata_music_disc.desc": " Hidden Citizens - Epic Trailer Version" ,
 
   "item.tutorialmod.kakariko_village_music_disc": "Kakariko Village",
-  "item.tutorialmod.kakariko_village_music_disc.desc": "Mikel - Zelda & Chill ~ Lofi Remix"
+  "item.tutorialmod.kakariko_village_music_disc.desc": "Mikel - Zelda & Chill ~ Lofi Remix",
+
+  "effect.tutorialmod.slimey": "Slimey"
 }
