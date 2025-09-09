@@ -80,5 +80,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.KAKARIKO_VILLAGE_MUSIC_DISC, Models.GENERATED);
         itemModelGenerator.register(ModItems.MOONLIGHT_SONATA_MUSIC_DISC, Models.GENERATED);
 
+        itemModelGenerator.register(ModItems.BROKEN_SOUL, Models.GENERATED);
+
     }
 }

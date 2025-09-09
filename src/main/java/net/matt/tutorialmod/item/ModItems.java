@@ -97,6 +97,9 @@ public class ModItems {
     public static final Item KAKARIKO_VILLAGE_MUSIC_DISC = registerItem("kakariko_village_music_disc",
             new Item(new Item.Settings().jukeboxPlayable(ModSounds.KAKARIKO_VILLAGE_KEY).maxCount(1))); //sets stack limit to 1
 
+    //Broken Soul
+    public static final Item BROKEN_SOUL = registerItem("broken_soul", new Item(new Item.Settings()));
+
     //==== Methods ====
     //Helper Method to assist in registering items, simplifies the inputs necessary
     public static Item registerItem(String name, Item item){

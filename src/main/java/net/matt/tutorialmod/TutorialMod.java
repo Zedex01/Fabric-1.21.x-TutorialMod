@@ -9,6 +9,8 @@ import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.matt.tutorialmod.block.ModBlocks;
 import net.matt.tutorialmod.component.ModDataComponentTypes;
 import net.matt.tutorialmod.effect.ModEffects;
+import net.matt.tutorialmod.enchantment.ModEnchantmentEffects;
+import net.matt.tutorialmod.enchantment.ModEnchantments;
 import net.matt.tutorialmod.item.ModItemGroups;
 import net.matt.tutorialmod.item.ModItems;
 import net.matt.tutorialmod.potion.ModPotions;
@@ -43,9 +45,11 @@ public class TutorialMod implements ModInitializer {
         ModSounds.registerSounds();
         ModEffects.registerEffects();
         ModPotions.registerPotions();
+        ModEnchantmentEffects.registerEnchantmentEffects();
 
         //Define item as Fuel item:
         FuelRegistry.INSTANCE.add(ModItems.STARLIGHT_ASHES, 600);
+        FuelRegistry.INSTANCE.add(ModItems.BROKEN_SOUL, 2400);
 
         //Register event
         PlayerBlockBreakEvents.BEFORE.register(new HammerUsageEvent());

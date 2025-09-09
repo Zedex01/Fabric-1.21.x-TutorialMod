@@ -3,6 +3,7 @@ package net.matt.tutorialmod;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.matt.tutorialmod.datagen.*;
+import net.matt.tutorialmod.enchantment.ModEnchantments;
 import net.matt.tutorialmod.trim.ModTrimMaterials;
 import net.matt.tutorialmod.trim.ModTrimPatterns;
 import net.minecraft.registry.RegistryBuilder;
@@ -27,5 +28,6 @@ public class TutorialModDataGenerator implements DataGeneratorEntrypoint {
         //important for the json files generated from both ModTrimPatterns and ModTrimMaterials classes
         registryBuilder.addRegistry(RegistryKeys.TRIM_MATERIAL, ModTrimMaterials::bootstrap);
         registryBuilder.addRegistry(RegistryKeys.TRIM_PATTERN, ModTrimPatterns::bootstrap);
+        registryBuilder.addRegistry(RegistryKeys.ENCHANTMENT, ModEnchantments::bootstrap);
     }
 }

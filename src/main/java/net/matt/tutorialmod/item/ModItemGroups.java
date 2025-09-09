@@ -45,6 +45,8 @@ public class ModItemGroups {
                         entries.add(ModItems.MOONLIGHT_SONATA_MUSIC_DISC);
                         entries.add(ModItems.KAKARIKO_VILLAGE_MUSIC_DISC);
 
+                        entries.add(ModItems.BROKEN_SOUL);
+
 
 
                     }).build());

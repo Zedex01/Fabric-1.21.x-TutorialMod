@@ -69,5 +69,9 @@
   "painting.tutorialmod.shrimp.title": "Shrimp",
   "painting.tutorialmod.shrimp.author": "NanoAttack",
   "painting.tutorialmod.saw_them.title": "Saw Them",
-  "painting.tutorialmod.saw_them.author": "NanoAttack"
+  "painting.tutorialmod.saw_them.author": "NanoAttack",
+
+  "enchantment.tutorialmod.lightning_striker": "Lightning Striker",
+
+  "item.tutorialmod.broken_soul": "§kbroken_soul"
 }
