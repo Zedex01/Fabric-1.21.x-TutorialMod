@@ -105,6 +105,10 @@ public class ModItems {
     public static final Item CAULIFLOWER_SEEDS = registerItem("cauliflower_seeds",
             new AliasedBlockItem(ModBlocks.CAULIFLOWER_CROP,new Item.Settings()));
 
+    //Honey Berries
+    public static final Item HONEY_BERRIES = registerItem("honey_berries",
+            new AliasedBlockItem(ModBlocks.HONEY_BERRY_BUSH, new Item.Settings().food(ModFoodComponents.HONEY_BERRY)));
+
     //==== Methods ====
     //Helper Method to assist in registering items, simplifies the inputs necessary
     public static Item registerItem(String name, Item item){

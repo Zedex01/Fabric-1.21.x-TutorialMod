@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.matt.tutorialmod.block.ModBlocks;
 import net.matt.tutorialmod.block.custom.CauliflowerCropBlock;
+import net.matt.tutorialmod.block.custom.HoneyBerryBushBlock;
 import net.matt.tutorialmod.block.custom.PinkGarnetLampBlock;
 import net.matt.tutorialmod.item.ModItems;
 import net.minecraft.data.client.*;
@@ -52,6 +53,10 @@ public class ModModelProvider extends FabricModelProvider {
 
         //Cauliflower Crop
         blockStateModelGenerator.registerCrop(ModBlocks.CAULIFLOWER_CROP, CauliflowerCropBlock.AGE,0 , 1, 2, 3, 4, 5, 6);
+
+        //HoneyBerryBush
+        blockStateModelGenerator.registerTintableCrossBlockStateWithStages(ModBlocks.HONEY_BERRY_BUSH, BlockStateModelGenerator.TintType.NOT_TINTED,
+                HoneyBerryBushBlock.AGE, 0, 1, 2, 3);
 
     }
 
