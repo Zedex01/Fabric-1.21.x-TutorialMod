@@ -17,6 +17,7 @@ import net.matt.tutorialmod.item.ModItems;
 import net.matt.tutorialmod.potion.ModPotions;
 import net.matt.tutorialmod.sound.ModSounds;
 import net.matt.tutorialmod.util.HammerUsageEvent;
+import net.matt.tutorialmod.world.gen.ModWorldGeneration;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
@@ -34,6 +35,9 @@ public class TutorialMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+        //World Gen
+        ModWorldGeneration.generateModWorldGen();
+
         //Register Item Groups
         ModItemGroups.registerItemGroups();
         //Registers the ModItems class
