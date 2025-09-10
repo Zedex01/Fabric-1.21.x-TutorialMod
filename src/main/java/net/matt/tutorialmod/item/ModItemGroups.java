@@ -46,6 +46,7 @@ public class ModItemGroups {
                         entries.add(ModItems.KAKARIKO_VILLAGE_MUSIC_DISC);
 
                         entries.add(ModItems.BROKEN_SOUL);
+                        entries.add(ModItems.CAULIFLOWER_SEEDS);
 
 
 

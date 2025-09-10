@@ -2,6 +2,7 @@ package net.matt.tutorialmod.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.matt.tutorialmod.TutorialMod;
+import net.matt.tutorialmod.block.ModBlocks;
 import net.matt.tutorialmod.item.custom.ChiselItem;
 import net.matt.tutorialmod.item.custom.HammerItem;
 import net.matt.tutorialmod.item.custom.ModArmorItem;
@@ -99,6 +100,10 @@ public class ModItems {
 
     //Broken Soul
     public static final Item BROKEN_SOUL = registerItem("broken_soul", new Item(new Item.Settings()));
+
+    //Cauliflower Seeds
+    public static final Item CAULIFLOWER_SEEDS = registerItem("cauliflower_seeds",
+            new AliasedBlockItem(ModBlocks.CAULIFLOWER_CROP,new Item.Settings()));
 
     //==== Methods ====
     //Helper Method to assist in registering items, simplifies the inputs necessary

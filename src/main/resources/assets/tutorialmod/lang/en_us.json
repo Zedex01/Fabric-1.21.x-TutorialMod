@@ -73,5 +73,8 @@
 
   "enchantment.tutorialmod.lightning_striker": "Lightning Striker",
 
-  "item.tutorialmod.broken_soul": "§kbroken_soul"
+  "item.tutorialmod.broken_soul": "§kbroken_soul",
+
+  "item.tutorialmod.cauliflower_seeds": "Cauliflower Seeds",
+  "block.tutorialmod.cauliflower_crop": "Cauliflower Crop"
 }
