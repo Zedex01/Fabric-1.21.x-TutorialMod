@@ -1,4 +1,4 @@
-// 1.21	2025-09-13T21:54:03.7438818	Tutorial Mod/Model Definitions
+// 1.21	2025-09-14T00:12:13.6015293	Tutorial Mod/Model Definitions
 6a728eda7238fed6b027e801e464250c3f3144ba assets\tutorialmod\blockstates\pink_garnet_block.json
 b8a328f7a3c0600e44839a46d05666c47291ffb9 assets\tutorialmod\models\block\raw_pink_garnet_block.json
 9259f7ad8475837988d4a226212ceaa71d674929 assets\tutorialmod\blockstates\cauliflower_crop.json
@@ -28,8 +28,8 @@ e81a0baf5f459ce13b02fb9d54329826f6ed70a9 assets\tutorialmod\models\item\pink_gar
 728955dac1ae3917f7506e988e00df1c568fe08a assets\tutorialmod\blockstates\pink_garnet_stairs.json
 89e510163885a3ef73d6808cb46ec663e51cf213 assets\tutorialmod\models\item\pink_garnet_pickaxe.json
 f746b64540daf2ab6302b3ec01a78490c48fc10b assets\tutorialmod\models\item\bar_brawl_music_disc.json
-8f1f80bbf89583a0ff289dc2893ae9bc07a722f7 assets\tutorialmod\models\item\pink_garnet_shovel.json
 b7fa9063d9cfffb94e5b0e258de053c495a8ab3a assets\tutorialmod\models\block\pink_garnet_slab_top.json
+8f1f80bbf89583a0ff289dc2893ae9bc07a722f7 assets\tutorialmod\models\item\pink_garnet_shovel.json
 1de8986c7f889df43a340003b65d2a4a43bc2348 assets\tutorialmod\models\item\raw_pink_garnet.json
 76a79025ce73edf3ba690a750b764d4bada22ed8 assets\tutorialmod\models\item\pink_garnet_leggings_amethyst_trim.json
 14da4146e8a9ef621cae14b9287ddaffe7ceda22 assets\tutorialmod\models\block\driftwood_planks.json

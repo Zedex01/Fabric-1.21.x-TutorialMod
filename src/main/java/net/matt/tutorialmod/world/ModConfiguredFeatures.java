@@ -4,6 +4,7 @@ import net.matt.tutorialmod.TutorialMod;
 import net.matt.tutorialmod.block.ModBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.block.SweetBerryBushBlock;
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
@@ -37,6 +38,8 @@ public class ModConfiguredFeatures {
     //Creates a registry key of the configured feature type with the name PINK_GARNET_ORE_KEY with the key name being "pink_garnet_ore"
 
     public static final RegistryKey<ConfiguredFeature<?, ?>> DRIFTWOOD_KEY = registerKey("driftwood");
+
+    public static final RegistryKey<ConfiguredFeature<?, ?>> HONEY_BERRY_BUSH_KEY = registerKey("honey_berry_bush");
 
 
     // ====== Helper Methods ======
@@ -78,6 +81,11 @@ public class ModConfiguredFeatures {
                 new BlobFoliagePlacer(ConstantIntProvider.create(4),  ConstantIntProvider.create(1), 3), //How they get placed
 
                 new TwoLayersFeatureSize(1, 0, 2)).dirtProvider(BlockStateProvider.of(Blocks.STONE)).build()); //has to do with preventing overlap
+        //Bush
+        register(context, HONEY_BERRY_BUSH_KEY, Feature.RANDOM_PATCH, ConfiguredFeatures.createRandomPatchFeatureConfig(Feature.SIMPLE_BLOCK,
+                new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.HONEY_BERRY_BUSH.getDefaultState().with(SweetBerryBushBlock.AGE, 3))),
+                List.of(Blocks.GRASS_BLOCK)
+        ) );
     }
 
     public static RegistryKey<ConfiguredFeature<?, ?>> registerKey(String name) {

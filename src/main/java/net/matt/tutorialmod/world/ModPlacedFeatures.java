@@ -10,8 +10,7 @@ import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.util.Identifier;
 import net.minecraft.world.gen.YOffset;
 import net.minecraft.world.gen.feature.*;
-import net.minecraft.world.gen.placementmodifier.HeightRangePlacementModifier;
-import net.minecraft.world.gen.placementmodifier.PlacementModifier;
+import net.minecraft.world.gen.placementmodifier.*;
 
 import java.util.List;
 
@@ -26,9 +25,10 @@ public class ModPlacedFeatures {
     // Tree Placed Keys
     public static final RegistryKey<PlacedFeature> DRIFTWOOD_PLACED_KEY = registryKey("driftwood_placed");
 
+    public static final RegistryKey<PlacedFeature> HONEY_BERRY_BUSH_PLACED_KEY = registryKey("honey_berry_bush_placed");
+
 
     // ==== Helper features ====
-
     public static void bootstrap(Registerable<PlacedFeature> context){
         var configuredFeatures = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
 
@@ -49,6 +49,10 @@ public class ModPlacedFeatures {
         register(context, DRIFTWOOD_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.DRIFTWOOD_KEY),
                 VegetationPlacedFeatures.treeModifiersWithWouldSurvive( //This means the tree can only be placed where the sapling would survive
                         PlacedFeatures.createCountExtraModifier(2, 0.1f, 2), ModBlocks.DRIFTWOOD_SAPLING));
+
+        // === Bush placed Feature ===
+        register(context, HONEY_BERRY_BUSH_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.HONEY_BERRY_BUSH_KEY),
+                RarityFilterPlacementModifier.of(32), SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of());
     }
 
     public static RegistryKey<PlacedFeature> registryKey(String name) {

@@ -5,5 +5,6 @@ public class ModWorldGeneration {
         //Order Here Matters
         ModOreGeneration.generateOres();
         ModTreeGeneration.generateTrees();
+        ModBushGeneration.generateBushes();
     }
 }

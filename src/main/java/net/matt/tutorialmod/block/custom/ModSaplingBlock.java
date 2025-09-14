@@ -8,10 +8,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.BlockView;
 
 public class ModSaplingBlock extends SaplingBlock {
-
     private final Block blockToPlaceOn;
-
-
 
     public ModSaplingBlock(SaplingGenerator generator, Settings settings, Block block) {
         super(generator, settings);
