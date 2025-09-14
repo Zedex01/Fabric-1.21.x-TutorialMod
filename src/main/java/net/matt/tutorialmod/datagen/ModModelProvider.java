@@ -7,6 +7,7 @@ import net.matt.tutorialmod.block.custom.CauliflowerCropBlock;
 import net.matt.tutorialmod.block.custom.HoneyBerryBushBlock;
 import net.matt.tutorialmod.block.custom.PinkGarnetLampBlock;
 import net.matt.tutorialmod.item.ModItems;
+import net.minecraft.client.render.RenderPhase;
 import net.minecraft.data.client.*;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.util.Identifier;
@@ -46,6 +47,8 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerTrapdoor(ModBlocks.PINK_GARNET_TRAPDOOR);
 
 
+
+
         //Lamp Kinda overkill for datagen, but still useful for larger scale projects
         Identifier lampOffIdentifier = TexturedModel.CUBE_ALL.upload(ModBlocks.PINK_GARNET_LAMP, blockStateModelGenerator.modelCollector); //Sets texture when on
         Identifier lampOnIdentifier = blockStateModelGenerator.createSubModel(ModBlocks.PINK_GARNET_LAMP, "_on", Models.CUBE_ALL, TextureMap::all); //sets texture when off
@@ -59,6 +62,15 @@ public class ModModelProvider extends FabricModelProvider {
         //HoneyBerryBush
         blockStateModelGenerator.registerTintableCrossBlockStateWithStages(ModBlocks.HONEY_BERRY_BUSH, BlockStateModelGenerator.TintType.NOT_TINTED,
                 HoneyBerryBushBlock.AGE, 0, 1, 2, 3);
+
+
+        // === Custom Tree ===
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DRIFTWOOD_PLANKS);
+        blockStateModelGenerator.registerSingleton(ModBlocks.DRIFTWOOD_LEAVES, TexturedModel.LEAVES);
+
+        blockStateModelGenerator.registerLog(ModBlocks.DRIFTWOOD_LOG).log(ModBlocks.DRIFTWOOD_LOG).wood(ModBlocks.DRIFTWOOD_WOOD);
+        blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_DRIFTWOOD_LOG).log(ModBlocks.STRIPPED_DRIFTWOOD_LOG).wood(ModBlocks.STRIPPED_DRIFTWOOD_WOOD);
+        blockStateModelGenerator.registerTintableCrossBlockState(ModBlocks.DRIFTWOOD_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
 
     }
 
@@ -92,6 +104,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.MOONLIGHT_SONATA_MUSIC_DISC, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.BROKEN_SOUL, Models.GENERATED);
+
+        itemModelGenerator.register(ModBlocks.DRIFTWOOD_SAPLING.asItem(), Models.GENERATED);
 
     }
 }

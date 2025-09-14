@@ -7,7 +7,9 @@ import net.matt.tutorialmod.block.custom.HoneyBerryBushBlock;
 import net.matt.tutorialmod.block.custom.MagicBlock;
 import net.matt.tutorialmod.block.custom.PinkGarnetLampBlock;
 import net.matt.tutorialmod.sound.ModSounds;
+import net.matt.tutorialmod.world.tree.ModSaplingGenerators;
 import net.minecraft.block.*;
+import net.minecraft.block.enums.NoteBlockInstrument;
 import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -17,6 +19,8 @@ import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
+
+import static net.minecraft.block.Blocks.*;
 
 public class ModBlocks {
 
@@ -56,6 +60,18 @@ public class ModBlocks {
 
     public static final Block HONEY_BERRY_BUSH = registerBlockWithoutBlockItem("honey_berry_bush",
             new HoneyBerryBushBlock(AbstractBlock.Settings.copy(Blocks.SWEET_BERRY_BUSH)));
+
+    // === Custom Tree ===
+    public static final Block DRIFTWOOD_LOG = registerBlock("driftwood_log", new PillarBlock(AbstractBlock.Settings.copy(OAK_LOG)));
+    public static final Block DRIFTWOOD_WOOD = registerBlock("driftwood_wood", new PillarBlock(AbstractBlock.Settings.copy(OAK_WOOD)));
+    public static final Block STRIPPED_DRIFTWOOD_LOG = registerBlock("stripped_driftwood_log", new PillarBlock(AbstractBlock.Settings.copy(STRIPPED_OAK_LOG)));
+    public static final Block STRIPPED_DRIFTWOOD_WOOD = registerBlock("stripped_driftwood_wood", new PillarBlock(AbstractBlock.Settings.copy(STRIPPED_OAK_WOOD)));
+
+    public static final Block DRIFTWOOD_PLANKS = registerBlock("driftwood_planks", new Block(AbstractBlock.Settings.copy(OAK_PLANKS)));
+    public static final Block DRIFTWOOD_LEAVES = registerBlock("driftwood_leaves",  new LeavesBlock(AbstractBlock.Settings.copy(OAK_LEAVES)));
+
+    public static final Block DRIFTWOOD_SAPLING = registerBlock("driftwood_sapling", new SaplingBlock(ModSaplingGenerators.DRIFTWOOD,AbstractBlock.Settings.copy(OAK_SAPLING)));
+
 
     //==================== Non-block blocks ============================
     //Stairs/slabs

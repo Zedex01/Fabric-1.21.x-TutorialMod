@@ -29,6 +29,11 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.PINK_GARNET_END_ORE)
                 .add(ModBlocks.MAGIC_BLOCK);
 
+
+        getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)
+                .add(ModBlocks.DRIFTWOOD_LOG);
+
+
           //Requires this level or higher to drop item.
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.PINK_GARNET_ORE)
@@ -44,6 +49,14 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(ModTags.Blocks.NEEDS_PINK_GARNET_TOOL)
                 .addTag(BlockTags.NEEDS_IRON_TOOL); //Equates its level to that of iron!
+
+        //This is necessary so leaves do not decay when touching a 'LOG'
+        getOrCreateTagBuilder(BlockTags.LOGS_THAT_BURN)
+                .add(ModBlocks.DRIFTWOOD_LOG)
+                .add(ModBlocks.STRIPPED_DRIFTWOOD_LOG)
+                .add(ModBlocks.DRIFTWOOD_WOOD)
+                .add(ModBlocks.STRIPPED_DRIFTWOOD_WOOD);
+
 
     }
 }

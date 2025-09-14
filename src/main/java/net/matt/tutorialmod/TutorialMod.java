@@ -4,9 +4,7 @@ import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.event.player.AttackEntityCallback;
 import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
-import net.fabricmc.fabric.api.registry.CompostingChanceRegistry;
-import net.fabricmc.fabric.api.registry.FabricBrewingRecipeRegistryBuilder;
-import net.fabricmc.fabric.api.registry.FuelRegistry;
+import net.fabricmc.fabric.api.registry.*;
 import net.matt.tutorialmod.block.ModBlocks;
 import net.matt.tutorialmod.component.ModDataComponentTypes;
 import net.matt.tutorialmod.effect.ModEffects;
@@ -18,6 +16,7 @@ import net.matt.tutorialmod.potion.ModPotions;
 import net.matt.tutorialmod.sound.ModSounds;
 import net.matt.tutorialmod.util.HammerUsageEvent;
 import net.matt.tutorialmod.world.gen.ModWorldGeneration;
+import net.minecraft.block.FireBlock;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
@@ -80,6 +79,24 @@ public class TutorialMod implements ModInitializer {
         //Compostable items
         CompostingChanceRegistry.INSTANCE.add(ModItems.CAULIFLOWER, 0.5f);
         CompostingChanceRegistry.INSTANCE.add(ModItems.CAULIFLOWER_SEEDS, 0.25f);
+
+
+        //Tree Stuff
+        CompostingChanceRegistry.INSTANCE.add(ModBlocks.DRIFTWOOD_LEAVES, 0.5f);
+        CompostingChanceRegistry.INSTANCE.add(ModBlocks.DRIFTWOOD_SAPLING, 0.25f);
+
+        //Make blocks strippable
+        StrippableBlockRegistry.register(ModBlocks.DRIFTWOOD_LOG, ModBlocks.STRIPPED_DRIFTWOOD_LOG);
+        StrippableBlockRegistry.register(ModBlocks.DRIFTWOOD_WOOD, ModBlocks.STRIPPED_DRIFTWOOD_WOOD);
+
+        //Make blocks flammable
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DRIFTWOOD_PLANKS, 5, 20);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DRIFTWOOD_LOG, 5, 20);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPED_DRIFTWOOD_LOG, 5, 20);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DRIFTWOOD_WOOD, 5, 20);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPED_DRIFTWOOD_WOOD, 5, 20);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DRIFTWOOD_LEAVES, 30, 60);
+
 
 	}
 }
