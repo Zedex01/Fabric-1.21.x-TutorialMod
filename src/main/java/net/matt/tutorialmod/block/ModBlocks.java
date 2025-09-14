@@ -2,10 +2,7 @@ package net.matt.tutorialmod.block;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.matt.tutorialmod.TutorialMod;
-import net.matt.tutorialmod.block.custom.CauliflowerCropBlock;
-import net.matt.tutorialmod.block.custom.HoneyBerryBushBlock;
-import net.matt.tutorialmod.block.custom.MagicBlock;
-import net.matt.tutorialmod.block.custom.PinkGarnetLampBlock;
+import net.matt.tutorialmod.block.custom.*;
 import net.matt.tutorialmod.sound.ModSounds;
 import net.matt.tutorialmod.world.tree.ModSaplingGenerators;
 import net.minecraft.block.*;
@@ -70,7 +67,7 @@ public class ModBlocks {
     public static final Block DRIFTWOOD_PLANKS = registerBlock("driftwood_planks", new Block(AbstractBlock.Settings.copy(OAK_PLANKS)));
     public static final Block DRIFTWOOD_LEAVES = registerBlock("driftwood_leaves",  new LeavesBlock(AbstractBlock.Settings.copy(OAK_LEAVES)));
 
-    public static final Block DRIFTWOOD_SAPLING = registerBlock("driftwood_sapling", new SaplingBlock(ModSaplingGenerators.DRIFTWOOD,AbstractBlock.Settings.copy(OAK_SAPLING)));
+    public static final Block DRIFTWOOD_SAPLING = registerBlock("driftwood_sapling", new ModSaplingBlock(ModSaplingGenerators.DRIFTWOOD,AbstractBlock.Settings.copy(OAK_SAPLING), Blocks.STONE));
 
 
     //==================== Non-block blocks ============================

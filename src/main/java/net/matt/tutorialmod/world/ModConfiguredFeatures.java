@@ -2,6 +2,7 @@ package net.matt.tutorialmod.world;
 
 import net.matt.tutorialmod.TutorialMod;
 import net.matt.tutorialmod.block.ModBlocks;
+import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryKey;
@@ -76,7 +77,7 @@ public class ModConfiguredFeatures {
                 BlockStateProvider.of(ModBlocks.DRIFTWOOD_LEAVES), //Set block
                 new BlobFoliagePlacer(ConstantIntProvider.create(4),  ConstantIntProvider.create(1), 3), //How they get placed
 
-                new TwoLayersFeatureSize(1, 0, 2)).build()); //has to do with preventing overlap
+                new TwoLayersFeatureSize(1, 0, 2)).dirtProvider(BlockStateProvider.of(Blocks.STONE)).build()); //has to do with preventing overlap
     }
 
     public static RegistryKey<ConfiguredFeature<?, ?>> registerKey(String name) {

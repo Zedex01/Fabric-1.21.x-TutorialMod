@@ -9,7 +9,7 @@ import net.minecraft.world.gen.GenerationStep;
 
 public class ModTreeGeneration {
     public static void generateTrees() {
-        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.PLAINS, BiomeKeys.SAVANNA, BiomeKeys.JAGGED_PEAKS, BiomeKeys.MEADOW),
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.STONY_PEAKS, BiomeKeys.JAGGED_PEAKS),
                 GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.DRIFTWOOD_PLACED_KEY);
     }
 }
